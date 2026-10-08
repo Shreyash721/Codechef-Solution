@@ -87,7 +87,7 @@ Linked list: `3 -> 6 -> 9 -> 12 -> 15` The last node `15` points to index `1` (`
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T16:22:41.164Z  
+**Submitted:** 2026-10-08T16:25:28.718Z  
 
 ```java
 // class Node {
@@ -102,13 +102,15 @@ Linked list: `3 -> 6 -> 9 -> 12 -> 15` The last node `15` points to index `1` (`
 
 
 public static int detectCycle(Node head) {
+   if(head==null || head.next==null) return -1;
    Node slow=head;
    Node fast=head;
-   int c=0;
+   int c=-1;
    while(slow!=null && fast!=null && fast.next!=null){
        slow=slow.next;
        fast=fast.next.next;
        if(slow==fast){
+           c=0;
            slow=head;
            while(slow!=fast){
                slow=slow.next;
