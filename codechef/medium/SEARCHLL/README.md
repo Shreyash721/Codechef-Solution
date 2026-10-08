@@ -114,7 +114,7 @@ After removing all 9’s -> final list = [8 -> 8]
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T15:02:31.112Z  
+**Submitted:** 2026-10-08T15:04:18.060Z  
 
 ```java
 // class Node {
@@ -139,6 +139,7 @@ static Node removeKey(Node head, int key) {
             head=head.next;
         }
     }
+    tr.next=null;
     if(tr!=dummy){
         return dummy.next;
     }
