@@ -77,7 +77,7 @@ In the second case, 1 -> 2 -> 3 -> 4 does not read the same backward.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T18:59:10.823Z  
+**Submitted:** 2026-10-08T18:59:28.837Z  
 
 ```java
 // Node structure used:
