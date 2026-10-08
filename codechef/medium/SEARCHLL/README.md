@@ -114,7 +114,7 @@ After removing all 9’s -> final list = [8 -> 8]
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T15:02:18.886Z  
+**Submitted:** 2026-10-08T15:02:31.112Z  
 
 ```java
 // class Node {
