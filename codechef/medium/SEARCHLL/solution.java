@@ -20,7 +20,6 @@ static Node removeKey(Node head, int key) {
             head=head.next;
         }
     }
-    tr.next=null;
     if(tr!=dummy){
         return dummy.next;
     }
