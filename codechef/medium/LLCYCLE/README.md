@@ -87,7 +87,7 @@ Linked list: `3 -> 6 -> 9 -> 12 -> 15` The last node `15` points to index `1` (`
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T16:22:04.164Z  
+**Submitted:** 2026-10-08T16:22:41.164Z  
 
 ```java
 // class Node {
