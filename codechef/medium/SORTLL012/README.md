@@ -55,7 +55,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-09T15:04:36.902Z  
+**Submitted:** 2026-10-09T15:04:42.242Z  
 
 ```java
 /* Node structure
