@@ -61,7 +61,7 @@ The first linked list is 1->2->3 Second one is 4 No elements are common elements
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-09T18:47:42.093Z  
+**Submitted:** 2026-10-09T18:47:50.086Z  
 
 ```java
 import java.util.HashSet;
