@@ -56,11 +56,13 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-09T14:15:03.288Z  
+**Submitted:** 2026-10-09T14:19:19.196Z  
 
 ```java
 class Solution {
     public Node rearrange(Node head) {
+        
+        if(head==null || head.next==null) return head;
         Node odddummy=new Node(-1);
         Node evendummy=new Node(-2);
         
