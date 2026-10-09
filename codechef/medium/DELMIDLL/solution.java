@@ -8,7 +8,7 @@
 // }
 
 static Node deleteMiddle(Node head) {
-    if(head==null || head.next==null) return head;
+    if(head==null || head.next==null) return null;
     Node t=head;
     int n=1;
     while(t.next!=null){
