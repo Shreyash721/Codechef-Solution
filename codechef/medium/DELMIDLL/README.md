@@ -80,7 +80,7 @@ Remove the element 15.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-09T15:20:56.305Z  
+**Submitted:** 2026-10-09T16:23:07.538Z  
 
 ```java
 // class Node {
@@ -95,25 +95,17 @@ Remove the element 15.
 static Node deleteMiddle(Node head) {
     if(head==null || head.next==null) return null;
     Node t=head;
-    int n=1;
+    int n=0;
     while(t.next!=null){
         t=t.next;
         n++;
     }
-    int mid=n/2-1;
+    int mid=n/2;
     t=head;
-    if(n%2!=0){
-        while(mid-->1){
+    for(int i=0;i<mid-1;i++){
         t=t.next;
-        }
-        t.next=t.next.next;
     }
-    else{
-        while(mid-->0){
-            t=t.next;
-        }
-        t.next=t.next.next;
-    }
+    t.next=t.next.next;
     
     return head;
     
