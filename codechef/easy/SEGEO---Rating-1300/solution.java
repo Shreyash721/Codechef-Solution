@@ -1,5 +1,7 @@
 class Solution {
     public Node rearrange(Node head) {
+        
+        if(head==null || head.next==null) return head;
         Node odddummy=new Node(-1);
         Node evendummy=new Node(-2);
         
