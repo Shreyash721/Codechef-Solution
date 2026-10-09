@@ -17,24 +17,33 @@ public class Main {
 
     // Function to find intersection point in Y shaped Linked Lists
    public static int intersectPoint(Node head1, Node head2) {
-    Node a = head1, b = head2;
-    int n = 0, m = 0;
-
-    while (a != null) { n++; a = a.next; }
-    while (b != null) { m++; b = b.next; }
-
-    a = head1;
-    b = head2;
-
-    while (n > m) { a = a.next; n--; }
-    while (m > n) { b = b.next; m--; }
-
-    while (a != b) {
-        a = a.next;
-        b = b.next;
+    Node t1=head1;
+    int n=0;
+    int m=0;
+    while(t1!=null){
+        n++;
+        t1=t1.next;
     }
-
-    return a == null ? -1 : a.data;
+    Node t2=head2;
+    while(t2!=null){
+        m++;
+        t2=t2.next;
+    }
+    Node a=head1;
+    Node b=head2;
+    while(n>m){
+        a=a.next;
+        n--;
+    }
+    while(m-->n){
+        b=b.next;
+    }
+    
+    while(a!=b){
+        a=a.next;
+        b=b.next;
+    }
+    return (a.data==b.data)?a.data:-1;
 }
 
     // Function to take input and create a linked list
