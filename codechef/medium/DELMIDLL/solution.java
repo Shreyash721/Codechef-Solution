@@ -10,12 +10,12 @@
 static Node deleteMiddle(Node head) {
     if(head==null || head.next==null) return null;
     Node t=head;
-    int n=0;
+    int n=1;
     while(t.next!=null){
         t=t.next;
         n++;
     }
-    int mid=n/2;
+    int mid=n/2-1;
     t=head;
     if(n%2!=0){
         while(mid-->1){
