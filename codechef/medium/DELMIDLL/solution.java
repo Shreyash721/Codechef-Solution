@@ -17,10 +17,18 @@ static Node deleteMiddle(Node head) {
     }
     int mid=n/2-1;
     t=head;
-    while(mid-->1){
+    if(n%2!=0){
+        while(mid-->1){
         t=t.next;
+        }
+        t.next=t.next.next;
     }
-    t.next=t.next.next;
+    else{
+        while(mid-->0){
+            t=t.next;
+        }
+        t.next=t.next.next;
+    }
     
     return head;
     
