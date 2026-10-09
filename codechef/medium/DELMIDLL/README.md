@@ -80,7 +80,7 @@ Remove the element 15.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-09T15:15:53.211Z  
+**Submitted:** 2026-10-09T15:16:25.764Z  
 
 ```java
 // class Node {
