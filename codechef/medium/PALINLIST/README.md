@@ -77,7 +77,7 @@ In the second case, 1 -> 2 -> 3 -> 4 does not read the same backward.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-08T19:00:01.821Z  
+**Submitted:** 2026-10-10T04:53:49.165Z  
 
 ```java
 // Node structure used:
@@ -91,22 +91,28 @@ In the second case, 1 -> 2 -> 3 -> 4 does not read the same backward.
 // }
 class Solution {
 public boolean isPalindrome(Node head) {
-    Node tail=head;
-    Node node=null;
-    while(tail!=null){
-        Node n=new Node(tail.val);
-        n.next=node;
-        node=n;
-        tail=tail.next;
+    ArrayList<Integer> arr=new ArrayList<>();
+    Node curr=head;
+    
+    while(curr!=null){
+        arr.add(curr.val);
+        curr=curr.next;
     }
     
-    while(head!=null && node!=null){
-        if(head.val!=node.val) return false;
-        head=head.next;
-        node=node.next;
+    
+    int i=0;
+    int j=arr.size()-1;
+    
+    while(i<=j){
+        if(arr.get(i)!=arr.get(j)){
+            return false;
+        }
+        i++;
+        j--;
     }
+    
     return true;
-}
+ }
 }
     
 
