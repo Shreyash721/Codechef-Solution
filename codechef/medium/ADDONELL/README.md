@@ -76,7 +76,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-10T04:23:48.669Z  
+**Submitted:** 2026-10-10T04:37:58.669Z  
 
 ```java
 // class Node {
@@ -91,44 +91,46 @@ Output
 
 public static Node addOne(Node head) {
  Node prev=null;
- Node c=head;
- while(c!=null){
-     Node next=c.next;
-     c.next=prev;
-     prev=c;
-     c=next;
+ Node curr=head;
+ while(curr!=null){
+     Node next=curr.next;
+     curr.next=prev;
+     prev=curr;
+     curr=next;
  }
  head=prev;
  
- c=head;
+ curr=head;
  int carry=1;
- 
- while(c!=null && carry==1){
-     if(c.data==9){
-        c.data=0;
-        if(c.next==null){
-            c.next=new Node(1);
-            carry=0;
-        }
-        else{
-            c=c.next;
-        }
+ while(curr!=null && carry==1){
+     if(curr.data==9){
+         curr.data=0;
+         if(curr.next==null){
+             curr.next=new Node(1);
+             carry=0;
+         }
+         else{
+             curr=curr.next;
+         }
      }
      else{
-         c.data++;
+         curr.data++;
          carry=0;
      }
  }
+ 
+ curr=head;
  prev=null;
- c=head;
- while(c!=null){
-     Node next=c.next;
-     c.next=prev;
-     prev=c;
-     c=next;
-  }
-  
-  return prev;
+ 
+ while(curr!=null){
+     Node next=curr.next;
+     curr.next=prev;
+     prev=curr;
+     curr=next;
+ }
+ 
+ 
+ return prev;
 }
 
 ```
