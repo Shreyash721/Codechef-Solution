@@ -81,7 +81,7 @@ The value `50` is not present, so the list remains unchanged.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-10T06:35:20.281Z  
+**Submitted:** 2026-10-10T06:36:31.252Z  
 
 ```java
 /*
@@ -106,7 +106,7 @@ class Node {
                  curr.prev.next=curr.next;
              }
              if(curr.next!=null){
-                 curr.next.prev=curr.next;
+                 curr.next.prev=curr.prev;
              }
          }
         curr=curr.next;
