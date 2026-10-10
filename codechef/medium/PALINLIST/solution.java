@@ -9,21 +9,27 @@
 // }
 class Solution {
 public boolean isPalindrome(Node head) {
-    Node tail=head;
-    Node node=null;
-    while(tail!=null){
-        Node n=new Node(tail.val);
-        n.next=node;
-        node=n;
-        tail=tail.next;
+    ArrayList<Integer> arr=new ArrayList<>();
+    Node curr=head;
+    
+    while(curr!=null){
+        arr.add(curr.val);
+        curr=curr.next;
     }
     
-    while(head!=null && node!=null){
-        if(head.val!=node.val) return false;
-        head=head.next;
-        node=node.next;
+    
+    int i=0;
+    int j=arr.size()-1;
+    
+    while(i<=j){
+        if(arr.get(i)!=arr.get(j)){
+            return false;
+        }
+        i++;
+        j--;
     }
+    
     return true;
-}
+ }
 }
     
