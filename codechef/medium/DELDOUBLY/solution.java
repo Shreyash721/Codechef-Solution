@@ -11,7 +11,7 @@ class Node {
  public static Node deleteAllOccurrences(Node head, int x ) {
      
      Node curr=head;
-     while(curr!=null && curr.next!=null){
+     while(curr!=null){
          if(curr.data==x){
              if(curr==head){
                  head=curr.next;
