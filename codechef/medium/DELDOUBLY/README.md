@@ -81,7 +81,7 @@ The value `50` is not present, so the list remains unchanged.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-10T06:36:31.252Z  
+**Submitted:** 2026-10-10T06:37:48.684Z  
 
 ```java
 /*
@@ -97,7 +97,7 @@ class Node {
  public static Node deleteAllOccurrences(Node head, int x ) {
      
      Node curr=head;
-     while(curr!=null && curr.next!=null){
+     while(curr!=null){
          if(curr.data==x){
              if(curr==head){
                  head=curr.next;
