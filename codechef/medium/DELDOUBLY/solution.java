@@ -20,7 +20,7 @@ class Node {
                  curr.prev.next=curr.next;
              }
              if(curr.next!=null){
-                 curr.next.prev=curr.next;
+                 curr.next.prev=curr.prev;
              }
          }
         curr=curr.next;
