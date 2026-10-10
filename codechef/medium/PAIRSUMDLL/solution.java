@@ -17,13 +17,13 @@
             right=right.next; 
         }
         
-        while(left!=null && right!=null && right!=left && left.data<right.data){
+        while(left!=null && right!=null && left.data<right.data){
             
             int sum=left.data+right.data;
             
             if(sum==target){
-                if(found) sb.append(" ");
-                sb.append('[').append(left.data).append(',').append(right.data).append(']');
+                // if(found) sb.append(" ");
+                sb.append("[").append(left.data).append(", ").append(right.data).append("] ");
                 found=true;
                 left=left.next;
                 right=right.prev;
