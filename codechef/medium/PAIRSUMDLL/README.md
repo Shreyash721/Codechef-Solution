@@ -82,7 +82,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-10T06:59:49.013Z  
+**Submitted:** 2026-10-10T07:01:29.308Z  
 
 ```java
 // class Node {
@@ -109,7 +109,7 @@ Output
             int sum=left.data+right.data;
             
             if(sum==target){
-                if(found) sb.append("");
+                if(found) sb.append(" ");
                 sb.append('[').append(left.data).append(',').append(right.data).append(']');
                 found=true;
                 left=left.next;
