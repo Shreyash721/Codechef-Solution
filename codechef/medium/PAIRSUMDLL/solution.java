@@ -22,8 +22,8 @@
             int sum=left.data+right.data;
             
             if(sum==target){
-                // if(found) sb.append(" ");
-                sb.append("[").append(left.data).append(", ").append(right.data).append("] ");
+                if(found) sb.append(" ");
+                sb.append('[').append(left.data).append(',').append(right.data).append(']');
                 found=true;
                 left=left.next;
                 right=right.prev;
