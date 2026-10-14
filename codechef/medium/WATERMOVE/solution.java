@@ -11,20 +11,18 @@ class Codechef
 		while(t-->0){
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
-		    
-		    int[] arr=new int[n];
-		   for(int i=0;i<n;i++){
-		       arr[i]=sc.nextInt();
+		    PriorityQueue<Integer> pq=new PriorityQueue<>();
+		    for(int i=0;i<n;i++){
+		        pq.add(sc.nextInt());
+		    }
+		   for(int i=0;i<k;i++){
+		       int x=pq.poll();
+		       int y=pq.poll();
+		      pq.add(x+y);
 		   }
-		   Arrays.sort(arr);
-		   
-		   if(n==2){
-		       System.out.println(arr[0]+arr[1]);
-		   }
-		   else{
-		   int f=0;
-		   int l=n-2;
-		   System.out.println(arr[f]+arr[l]);
+		   int max=0;
+		   while(!pq.isEmpty()){
+		       max = Math.max()
 		   }
 		}
 	}
