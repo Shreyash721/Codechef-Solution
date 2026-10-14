@@ -17,14 +17,9 @@ class Codechef
 		       arr[i]=sc.nextInt();
 		   }
 		   
-		   if(n==2){
-		       System.out.println(arr[0]+arr[1]);
-		   }
-		   else{
+		   
 		   int f=0;
-		   int l=n-2;
-		   System.out.println(arr[f]+arr[l]);
-		   }
+		   int l=n-
 		}
 	}
 }
