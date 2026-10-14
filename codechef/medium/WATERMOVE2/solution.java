@@ -18,7 +18,6 @@ class Codechef
 		        arr[i]=sc.nextInt();
 		    }
 		    if(k>n) max=n;
-		    else max=k;
 		    Arrays.sort(arr);
 		    int i=arr.length-max;
 		    while(i<n && max>0){
