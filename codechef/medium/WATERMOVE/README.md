@@ -60,25 +60,29 @@ At the end, the array is $[0, 5, 0, 5, 5]$, and the maximum is $5$.
 
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:03:51.397Z  
+**Submitted:** 2026-10-14T15:20:55.729Z  
 
-```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-
-	}
-}
-
+```py
+# cook your dish here
+import heapq
+t=int(input())
+for _ in range(t):
+    n,k=map(int,input().split())
+    arr=list(map(int,input().split()))
+    arr.sort()
+    for i in range(k):
+        arr[i+1]+=arr[i];
+    
+    # for _ in range(k):
+    #     a=heapq.heappop(arr)
+    #     b=heapq.heappop(arr)
+    #     heapq.heappush(arr,a+b)
+        
+        
+    print(max(arr))
 ```
 
 ---
