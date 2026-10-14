@@ -63,7 +63,7 @@ At the end, the array is $[0, 5, 0, 5, 5]$, and the maximum is $5$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T16:06:48.108Z  
+**Submitted:** 2026-10-14T15:27:52.408Z  
 
 ```java
 import java.util.*;
@@ -80,22 +80,21 @@ class Codechef
 		while(t-->0){
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
-		    int [] arr=new int[n];
+		    PriorityQueue<Integer> pq=new PriorityQueue<>();
 		    for(int i=0;i<n;i++){
-		        arr[i]=sc.nextInt();
+		        pq.add(sc.nextInt());
 		    }
-		    Arrays.sort(arr);
-		    if(n>2){
-		        int s1=arr[0];
-		        int s2=arr[1];
-		        int max=arr[n-1];
-		        int min=s1+s2;
-		        max=Math.max(max,min);
-		        System.out.println(max);
-		    }
-		    else{
-		        System.out.println(arr[0]+arr[1]);
-		    }
+		   for(int i=0;i<k;i++){
+		       int x=pq.poll();
+		       int y=pq.poll();
+		      pq.add(x+y);
+		   }
+		   int max=0;
+		   while(!pq.isEmpty()){
+		       max = Math.max(max,pq.poll());
+		   }
+		   
+		   System.out.println(max);
 		}
 	}
 }
