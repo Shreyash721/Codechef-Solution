@@ -60,27 +60,42 @@ At the end, the array is $[0, 5, 0, 5, 5]$, and the maximum is $5$.
 
 ## Solution
 
-**Language:** Python  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:19:05.845Z  
+**Submitted:** 2026-10-14T15:25:49.407Z  
 
-```py
-# cook your dish here
-import heapq
-t=int(input())
-for _ in range(t):
-    n,k=map(int,input().split())
-    arr=list(map(int,input().split()))
-    heapq.heapify(arr)
-    
-    for _ in range(k):
-        a=heapq.heappop(arr)
-        b=heapq.heappop(arr)
-        heapq.heappush(arr,a+b)
-        
-        
-    print(max(arr))
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0){
+		    int n=sc.nextInt();
+		    int k=sc.nextInt();
+		    PriorityQueue<Integer> pq=new PriorityQueue<>();
+		    for(int i=0;i<n;i++){
+		        pq.add(sc.nextInt());
+		    }
+		   for(int i=0;i<k;i++){
+		       int x=pq.poll();
+		       int y=pq.poll();
+		      pq.add(x+y);
+		   }
+		   int max=0;
+		   while(!pq.isEmpty()){
+		       max = Math.max()
+		   }
+		}
+	}
+}
+
 ```
 
 ---
