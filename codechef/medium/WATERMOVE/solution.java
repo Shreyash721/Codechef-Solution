@@ -16,6 +16,7 @@ class Codechef
 		   for(int i=0;i<n;i++){
 		       arr[i]=sc.nextInt();
 		   }
+		   Arrays.sort(arr);
 		   
 		   if(n==2){
 		       System.out.println(arr[0]+arr[1]);
@@ -23,7 +24,7 @@ class Codechef
 		   else{
 		   int f=0;
 		   int l=n-2;
-		   System.out.println(arr[f],arr[l]);
+		   System.out.println(arr[f]+arr[l]);
 		   }
 		}
 	}
