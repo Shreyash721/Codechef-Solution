@@ -10,6 +10,8 @@ class Codechef
 		int T=sc.nextInt();
 		
 		while(T-->0){
+		    int n=sc.nextInt();
+		    for(int i=0;i<n;i++) int [] arr=sc.nextInt();
 		    
 		}
 
