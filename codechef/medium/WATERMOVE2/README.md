@@ -58,7 +58,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T14:56:18.164Z  
+**Submitted:** 2026-10-14T14:54:06.437Z  
 
 ```java
 import java.util.*;
@@ -71,20 +71,18 @@ class Codechef
 	{
 		Scanner sc=new Scanner(System.in);
 		int max=0;
-		int sum=0;
 		int t=sc.nextInt();
 		while(t-->0){
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
-		    int[] arr=new int[n];
-		    for(int i=0;i<n;i++){
-		        arr[i]=sc.nextInt();
+		    while(n-->0){
+		        int[] arr=sc.nextInt();
 		    }
 		    if(k>n) max=n;
 		    Arrays.sort(arr);
 		    int i=arr.length-max;
 		    while(i<n && max>0){
-		       sum = sum+arr[i];
+		        int sum = sum+arr[i];
 		        i++;
 		        max--;
 		    }
