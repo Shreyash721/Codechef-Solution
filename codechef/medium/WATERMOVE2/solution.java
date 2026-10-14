@@ -12,7 +12,7 @@ class Codechef
 		while(t-->0){
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
-		    while(n>0){
+		    while(n-->0){
 		        int[] arr=sc.nextInt();
 		    }
 		    if(k>n) max=n;
