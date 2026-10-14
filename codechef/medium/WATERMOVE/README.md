@@ -60,29 +60,44 @@ At the end, the array is $[0, 5, 0, 5, 5]$, and the maximum is $5$.
 
 ## Solution
 
-**Language:** Python  
+**Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:21:25.390Z  
+**Submitted:** 2026-10-14T15:11:01.397Z  
 
-```py
-# cook your dish here
-import heapq
-t=int(input())
-for _ in range(t):
-    n,k=map(int,input().split())
-    arr=list(map(int,input().split()))
-    arr.sort()
-    for i in range(k):
-        arr[i+1]+=arr[i];
-    
-    # for _ in range(k):
-    #     a=heapq.heappop(arr)
-    #     b=heapq.heappop(arr)
-    #     heapq.heappush(arr,a+b)
-        
-        
-    print(max(arr))
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0){
+		    int n=sc.nextInt();
+		    int k=sc.nextInt();
+		    
+		    int[] arr=new int[n];
+		   for(int i=0;i<n;i++){
+		       arr[i]=sc.nextInt();
+		   }
+		   Arrays.sort(arr);
+		   
+		   if(n==2){
+		       System.out.println(arr[0]+arr[1]);
+		   }
+		   else{
+		   int f=0;
+		   int l=n-2;
+		   System.out.println(arr[f]+arr[l]);
+		   }
+		}
+	}
+}
+
 ```
 
 ---
