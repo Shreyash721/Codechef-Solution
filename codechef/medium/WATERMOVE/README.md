@@ -63,7 +63,7 @@ At the end, the array is $[0, 5, 0, 5, 5]$, and the maximum is $5$.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:07:52.398Z  
+**Submitted:** 2026-10-14T15:03:29.394Z  
 
 ```java
 import java.util.*;
@@ -74,21 +74,8 @@ class Codechef
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		Scanner sc=new Scanner(System.in);
-		int t=sc.nextInt();
-		while(t-->0){
-		    int n=sc.nextInt();
-		    int k=sc.nextInt();
-		    
-		    int[] arr=new int[n];
-		   for(int i=0;i<n;i++){
-		       arr[i]=sc.nextInt();
-		   }
-		   
-		   
-		   int f=0;
-		   int l=n-
-		}
+		// your code goes here
+
 	}
 }
 
