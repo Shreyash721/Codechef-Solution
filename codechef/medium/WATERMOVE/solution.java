@@ -12,21 +12,22 @@ class Codechef
 		while(t-->0){
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
-		    PriorityQueue<Integer> pq=new PriorityQueue<>();
+		    int [] arr=new int[n];
 		    for(int i=0;i<n;i++){
-		        pq.add(sc.nextInt());
+		        arr[i]=sc.nextInt();
 		    }
-		   for(int i=0;i<k;i++){
-		       int x=pq.poll();
-		       int y=pq.poll();
-		      pq.add(x+y);
-		   }
-		   int max=0;
-		   while(!pq.isEmpty()){
-		       max = Math.max(max,pq.poll());
-		   }
-		   
-		   System.out.println(max);
+		    Arrays.sort(arr);
+		    if(n>2){
+		        int s1=arr[0];
+		        int s2=arr[1];
+		        int max=arr[n-1];
+		        int min=s1+s2;
+		        max=Math.max(max,min);
+		        System.out.println(max);
+		    }
+		    else{
+		        System.out.println(arr[0]+arr[1]);
+		    }
 		}
 	}
 }
