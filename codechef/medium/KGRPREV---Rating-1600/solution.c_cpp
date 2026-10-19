@@ -1,0 +1,34 @@
+/*struct Node {
+	int val;
+	struct Node* next;
+	Node(int x){
+		val = x;
+		next = NULL;
+	}
+};*/ 
+
+
+Node* reverseMSizeGroups(Node* head, int M) {
+    if (head == NULL || M <= 1) {
+        return head;
+    }
+
+    Node* curr = head;
+    Node* prev = NULL;
+    Node* next = NULL;
+    int count = 0;
+
+    // Reverse M nodes
+    while (curr != NULL && count < M) {
+        next = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr = next;
+        count++;
+    }
+
+    // Connect to the next reversed group
+    head->next = reverseMSizeGroups(curr, M);
+
+    return prev;
+}
