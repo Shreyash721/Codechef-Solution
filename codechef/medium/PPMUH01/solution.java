@@ -2,25 +2,25 @@ class QueueUsingStacks {
     Stack<Integer> st=new Stack<>();
     Stack<Integer> st2=new Stack<>();
     public void pushElement(int x) {
-        st2.push(x);
-        while(!st.isEmpty()){
-            st2.push(st.pop());
-        }
-        Stack<Integer> temp=st;
-        st=st2;
-        st2=temp;
+        st.push(x);
     }
     
     public int popElement() {
-        return st.pop();
+      if(st2.isEmpty()){
+            while(!st.isEmpty()) st2.push(st.pop());
+        }
+        return st2.pop();
     }
     
     public int peekElement() {
-        return st.peek();
+        if(st2.isEmpty()){
+            while(!st.isEmpty()) st2.push(st.pop());
+        }
+        return st2.peek();
     }
     
     public boolean isEmptyResult() {
-        return st.isEmpty();
+        return st.isEmpty() && st2.isEmpty();
      }
 }
     
