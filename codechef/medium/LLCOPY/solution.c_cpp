@@ -1,0 +1,40 @@
+//struct Node {
+//    int val;
+//    Node* next;
+//    Node* random;
+//    Node(int x) : val(x), next(NULL), random(NULL) {}
+//};
+
+Node* copyRandomList(Node* head) {
+    if (head == NULL) {
+        return NULL;
+    }
+
+    unordered_map<Node*, Node*> mp;
+
+    Node* curr = head;
+
+    // Step 1: Create copies of all nodes
+    while (curr != NULL) {
+        mp[curr] = new Node(curr->val);
+        curr = curr->next;
+    }
+
+    // Step 2: Set next and random pointers
+    curr = head;
+
+    while (curr != NULL) {
+        if (curr->next != NULL) {
+            mp[curr]->next = mp[curr->next];
+        }
+
+        if (curr->random != NULL) {
+            mp[curr]->random = mp[curr->random];
+        }
+
+        curr = curr->next;
+    }
+
+    // Step 3: Return copied head
+    return mp[head];
+}
