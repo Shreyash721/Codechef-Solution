@@ -10,8 +10,10 @@ class Solution {
     public static void printMinDifference(Node root) {
         ArrayList<Integer> arr=new ArrayList<>();
         flatten(root,arr);
-        
-        System.out.println(arr.get(1)-arr.get(0));
+        int d=0;
+        for(int i=1;i<arr.size();i++){
+            int i=
+        }
         
         
     }
