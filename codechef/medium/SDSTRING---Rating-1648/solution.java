@@ -17,8 +17,7 @@ class Codechef
 		        
 		    }
 		    if(s.length()%2!=0 || c1==0 ||c0==0) System.out.println("-1");
-		    else if(c1==c0) System.out.println("0");
-		    else System.out.println(Math.abs(c1-c0)-1);
+		    else System.out.println(Math.abs(c1-c0)/2);
 		}
 
 	}
