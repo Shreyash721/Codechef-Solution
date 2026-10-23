@@ -54,7 +54,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T17:53:16.706Z  
+**Submitted:** 2026-10-23T17:54:04.702Z  
 
 ```java
 import java.util.*;
@@ -75,7 +75,7 @@ class Codechef
 		        else c0++;
 		        
 		    }
-		    if(s.length()%2!=0) System.out.println("-1");
+		    if(s.length()%2!=0 || c1==0 ||c0==0) System.out.println("-1");
 		    else if(c1==c0) System.out.println("0");
 		    else System.out.println(Math.abs(c1-c0)-1);
 		}
