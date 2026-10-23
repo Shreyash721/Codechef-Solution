@@ -26,7 +26,7 @@ Check out the code on the right to see the implementation and run the code to se
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T06:20:57.270Z  
+**Submitted:** 2026-10-23T06:23:03.252Z  
 
 ```java
 class Codechef {
