@@ -45,7 +45,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T04:52:00.965Z  
+**Submitted:** 2026-10-23T04:47:43.576Z  
 
 ```java
 class Solution {
@@ -60,13 +60,10 @@ class Solution {
     public static void printMinDifference(Node root) {
         ArrayList<Integer> arr=new ArrayList<>();
         flatten(root,arr);
-        int d=100000;
-        for(int i=1;i<arr.size();i++){
-            int diff=arr.get(i)-arr.get(i-1);
-            d=Math.min(d,diff);
-        }
         
-        System.out.println(d);
+        System.out.println(arr.get(1)-arr.get(0));
+        
+        
     }
 }
 
