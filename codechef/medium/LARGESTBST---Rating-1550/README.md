@@ -85,7 +85,7 @@ The subtree `[8, 5, 15, 1, 7, -1, 20]` is the largest BST of size 6.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T15:15:37.065Z  
+**Submitted:** 2026-10-23T17:21:00.253Z  
 
 ```java
 // class Node {
