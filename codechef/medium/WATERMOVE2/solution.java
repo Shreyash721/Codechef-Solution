@@ -7,10 +7,11 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc=new Scanner(System.in);
-		int max=0;
-		int sum=0;
+		
 		int t=sc.nextInt();
 		while(t-->0){
+		    int sum=0;
+		    int max-0;
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
 		    int[] arr=new int[n];
