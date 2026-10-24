@@ -68,7 +68,7 @@ Maximum are that dumbu can cut is the rectangle from (1,3) to (3,4) hence the ar
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-24T01:46:01.791Z  
+**Submitted:** 2026-10-24T02:16:50.456Z  
 
 ```java
 import java.util.*;
@@ -83,6 +83,7 @@ class Codechef
 		int m=sc.nextInt();
 		int n=sc.nextInt();
 		int [][] grid=new int[m][n];
+		int max=0;
 		for(int i=0;i<m;i++){
 		    for(int j=0;j<n;j++){
 		        grid[i][j]=sc.nextInt();
@@ -91,25 +92,22 @@ class Codechef
 		
 		int [] h=new int[n];
 		for(int i=0;i<m;i++){
+		    
 		    for(int j=0;j<n;j++){
 		        if(grid[i][j]==1){
 		            h[j]++;
 		        }
 		        else h[j]=0;
 		    }
-		}
-		
-		for(int j=0;j<n;j++){
-		    int min=h[j];
-		    int max=0;
-		   
-		    
-		    for(int k=j;k<n;k++){
+	    for(int j=0;j<n;j++){
+		int min=h[j];
+		for(int k=j;k<n;k++){
 		        min=Math.min(min,h[k]);
 		        int area=min*(k-j+1);
 		        max=Math.max(max,area);
 		    }
 		}
+	}
 		
 		System.out.println(max);
 
