@@ -68,7 +68,7 @@ Maximum are that dumbu can cut is the rectangle from (1,3) to (3,4) hence the ar
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-24T02:16:50.456Z  
+**Submitted:** 2026-10-24T02:18:21.170Z  
 
 ```java
 import java.util.*;
