@@ -73,10 +73,10 @@ This swimming pool has 2 sections :
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-24T04:01:06.660Z  
+**Submitted:** 2026-10-24T04:01:31.135Z  
 
 ```java
-\
+
 import java.util.*;
 
 class Codechef {
