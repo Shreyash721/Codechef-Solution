@@ -58,7 +58,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T14:59:22.448Z  
+**Submitted:** 2026-10-14T15:00:08.083Z  
 
 ```java
 import java.util.*;
@@ -70,10 +70,11 @@ class Codechef
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc=new Scanner(System.in);
-		int max=0;
-		int sum=0;
+		
 		int t=sc.nextInt();
 		while(t-->0){
+		    int sum=0;
+		    int max-0;
 		    int n=sc.nextInt();
 		    int k=sc.nextInt();
 		    int[] arr=new int[n];
