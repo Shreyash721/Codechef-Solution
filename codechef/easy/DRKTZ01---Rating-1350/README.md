@@ -80,7 +80,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T08:16:31.556Z  
+**Submitted:** 2026-10-26T08:16:34.872Z  
 
 ```java
 public int[] resolveAsteroidCollisions(int[] a) {
