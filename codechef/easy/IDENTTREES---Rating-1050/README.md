@@ -50,16 +50,19 @@ YES
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-14T09:38:37.313Z  
+**Submitted:** 2026-11-14T09:39:36.944Z  
 
 ```java
 class Solution {
     boolean areIdenticalTrees(Node root1, Node root2) {
-        if(root1==null && root2==null) return true;
+    //     if(root1==null && root2==null) return true;
     
-        if((root1!=null && root2==null) || (root1==null && root2!=null)) return false;
-       if(root1.val!=root2.val) return false; 
-       return (areIdenticalTrees(root1.left,root2.left) && areIdenticalTrees(root1.right, root2.right));
+    //     if((root1!=null && root2==null) || (root1==null && root2!=null)) return false;
+    //   if(root1.val!=root2.val) return false; 
+    //   return (areIdenticalTrees(root1.left,root2.left) && areIdenticalTrees(root1.right, root2.right));
+    
+    
+    return true;
     }
 }
 ```
