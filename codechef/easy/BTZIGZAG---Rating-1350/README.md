@@ -46,7 +46,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-14T06:56:48.807Z  
+**Submitted:** 2026-11-14T06:57:07.643Z  
 
 ```java
 // class Node {
@@ -82,7 +82,7 @@ class Solution {
         }
         for(int i=0;i<result.size();i++){
             for(int j=0;j<result.get(i).size();j++){
-                System.out.print(result.get(i).get(j));
+                System.out.print(result.get(i).get(j)+" ");
             }
             System.out.println();
         }
