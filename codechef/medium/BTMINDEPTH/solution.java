@@ -10,8 +10,8 @@
 class Solution {
     public int minDepth(Node root) {
         if(root==null) return 0;
-        int l=1+minDepth(root.left);
-        int r=1+minDepth(root.right);
-        return Math.min(r,l);
+        int l=minDepth(root.left);
+        int r=minDepth(root.right);
+        return 1+Math.min(r,l);
     }
 }
