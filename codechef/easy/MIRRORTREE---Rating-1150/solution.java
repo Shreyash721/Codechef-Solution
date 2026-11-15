@@ -10,7 +10,7 @@ static class Node {
 }
 */
 private static void isMirrorTree(Node root) {
-    if((root.left!=null && root.right!=null) && (root.left==null && root.right==null)){
+    if((root.left!=null && root.right!=null) || (root.left==null && root.right==null)){
         System.out.print("YES");
     }
     else{
