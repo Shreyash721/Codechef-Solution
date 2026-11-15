@@ -13,6 +13,6 @@ private static void isMirrorTree(Node root) {
     if(root.left==root.right){
         System.out.print("YES");
     }
-    System.out.println("YES");
+    System.out.println("NO");
 }
 
