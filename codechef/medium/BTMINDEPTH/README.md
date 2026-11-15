@@ -44,7 +44,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-14T19:08:16.928Z  
+**Submitted:** 2026-11-14T19:08:17.958Z  
 
 ```java
 // class Node {
