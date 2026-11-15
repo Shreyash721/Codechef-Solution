@@ -45,7 +45,7 @@ YES
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-15T05:59:28.936Z  
+**Submitted:** 2026-11-15T06:00:30.184Z  
 
 ```java
 /*
@@ -60,7 +60,7 @@ static class Node {
 }
 */
 private static void isMirrorTree(Node root) {
-    if((root.left!=null && root.right!=null) && (root.left==null && root.right==null)){
+    if((root.left!=null && root.right!=null) || (root.left==null && root.right==null)){
         System.out.print("YES");
     }
     else{
