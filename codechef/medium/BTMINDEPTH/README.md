@@ -44,7 +44,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-14T19:06:13.922Z  
+**Submitted:** 2026-11-14T19:08:16.928Z  
 
 ```java
 // class Node {
@@ -56,14 +56,21 @@ Output
 //         this.left = this.right = null;
 //     }
 // }
+
 class Solution {
     public int minDepth(Node root) {
-        if(root==null) return 0;
-        int l=minDepth(root.left);
-        int r=minDepth(root.right);
-        return 1+Math.min(r,l);
+        if(root == null) return 0;
+
+        int l = minDepth(root.left);
+        int r = minDepth(root.right);
+
+        if(root.left == null) return 1 + r;
+        if(root.right == null) return 1 + l;
+
+        return 1 + Math.min(l, r);
     }
 }
+
 ```
 
 ---
