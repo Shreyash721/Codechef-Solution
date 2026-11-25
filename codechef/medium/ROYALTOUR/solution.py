@@ -9,7 +9,7 @@ for _ in range(t):
         x,y=r,c
         s=0
         for a,b in q:
-            s+-max(abs(x-a),abs(y-b))
+            s+=max(abs(x-a),abs(y-b))
             x,y=a,b
         ans=min(ans,s)
     print(ans)
