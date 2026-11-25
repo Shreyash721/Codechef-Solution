@@ -64,7 +64,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:47:02.464Z  
+**Submitted:** 2026-11-25T14:46:32.536Z  
 
 ```py
 from itertools import permutations
