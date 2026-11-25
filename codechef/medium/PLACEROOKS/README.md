@@ -62,24 +62,13 @@ RR...
 
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:36:38.188Z  
+**Submitted:** 2026-11-25T14:47:29.195Z  
 
-```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		// your code goes here
-
-	}
-}
+```py
+# cook your dish here
 
 ```
 
