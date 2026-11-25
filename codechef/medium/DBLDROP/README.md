@@ -63,25 +63,22 @@ Output
 
 ## Solution
 
-**Language:** Java  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:37:54.199Z  
+**Submitted:** 2026-11-25T14:41:04.539Z  
 
-```java
-import java.util.*;
-import java.lang.*;
-import java.io.*;
-
-class Codechef
-{
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		
-
-	}
-}
-
+```py
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    s=sum(a)
+    m=max(a)
+    ans=s-m
+    for x in a:
+        ans=max(ans,s+x-max(m,2*x))
+    print(ans)
 ```
 
 ---
