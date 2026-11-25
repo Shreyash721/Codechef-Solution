@@ -64,7 +64,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-25T14:45:46.659Z  
+**Submitted:** 2026-11-25T14:47:02.464Z  
 
 ```py
 from itertools import permutations
@@ -78,7 +78,7 @@ for _ in range(t):
         x,y=r,c
         s=0
         for a,b in q:
-            s+-max(abs(x-a),abs(y-b))
+            s+=max(abs(x-a),abs(y-b))
             x,y=a,b
         ans=min(ans,s)
     print(ans)
