@@ -58,18 +58,17 @@ YES
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-22T17:04:36.009Z  
+**Submitted:** 2026-11-26T06:04:20.782Z  
 
 ```java
 class Solution {
     // Method to search for a value in BST
     public static boolean searchInBST(Node root, int x) {
-       if(root==null) return false;
-       if(root.val==x) return true;
-       searchInBST(root.left,x);
-       searchInBST(root.right,x);
-       
-       return true;
+       {
+           if(root==null) return false;
+           if(root.val==x) return true;
+           return searchInBST(root.left,x) || searchInBST(root.right,x);
+       }
     }
 }
 
