@@ -128,7 +128,7 @@ The binary tree is:
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-26T07:03:25.162Z  
+**Submitted:** 2026-11-26T07:03:53.108Z  
 
 ```java
 // // class TreeNode {
@@ -141,40 +141,40 @@ The binary tree is:
 // // }
 
 
-// class Solution {
-//     private ArrayList<Integer> flatten1(TreeNode root){
-//       ArrayList<Integer> arr=new ArrayList<>();
-//       if(root==null) return arr;
-//       arr.add(root.val);
-//       arr.addAll(flatten1(root.left));
-//       arr.addAll(flatten1(root.right));
+class Solution {
+    private ArrayList<Integer> flatten1(TreeNode root){
+      ArrayList<Integer> arr=new ArrayList<>();
+      if(root==null) return arr;
+      arr.add(root.val);
+      arr.addAll(flatten1(root.left));
+      arr.addAll(flatten1(root.right));
        
-//       return arr;
-//     }
-//     private ArrayList<Integer> flatten2(TreeNode root){
-//         ArrayList<Integer> arr=new ArrayList<>();
-//       if(root==null) return arr;
-//       arr.addAll(flatten2(root.left));
-//       arr.add(root.val);
-//       arr.addAll(flatten2(root.right));
+      return arr;
+    }
+    private ArrayList<Integer> flatten2(TreeNode root){
+        ArrayList<Integer> arr=new ArrayList<>();
+      if(root==null) return arr;
+      arr.addAll(flatten2(root.left));
+      arr.add(root.val);
+      arr.addAll(flatten2(root.right));
        
-//       return arr;
-//     }
-//     private ArrayList<Integer> flatten3(TreeNode root){
-//         ArrayList<Integer> arr=new ArrayList<>();
-//       if(root==null) return arr;
-//       arr.addAll(flatten3(root.left));
-//       arr.addAll(flatten3(root.right));
-//       arr.add(root.val);
+      return arr;
+    }
+    private ArrayList<Integer> flatten3(TreeNode root){
+        ArrayList<Integer> arr=new ArrayList<>();
+      if(root==null) return arr;
+      arr.addAll(flatten3(root.left));
+      arr.addAll(flatten3(root.right));
+      arr.add(root.val);
        
-//       return arr;
-//     }
+      return arr;
+    }
     
-//     public List<List<Integer>> getTraversals(TreeNode root) {
-//         return Arrays.asList(flatten2(root),flatten1(root),flatten3(root));
+    public List<List<Integer>> getTraversals(TreeNode root) {
+        return Arrays.asList(flatten2(root),flatten1(root),flatten3(root));
     
-//     }
-// }
+    }
+}
 
 class Solution {
     private void dfs(TreeNode root, List<Integer> pre, List<Integer> in, List<Integer> post){
