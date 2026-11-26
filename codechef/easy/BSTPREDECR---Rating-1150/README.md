@@ -46,7 +46,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-26T06:43:48.864Z  
+**Submitted:** 2026-11-26T06:46:53.960Z  
 
 ```java
 // import java.util.*;
@@ -72,7 +72,8 @@ class Solution {
         ArrayList<Integer> arr=new ArrayList<>();
         flatten(root,arr);
         int a=arr.indexOf(x);
-        return arr.get(a-1);
+        if(a>0) return arr.get(a-1);
+        else return -1;
     }
 }
 
