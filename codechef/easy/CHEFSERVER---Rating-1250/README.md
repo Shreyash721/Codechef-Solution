@@ -75,7 +75,7 @@ Hence, the output is `3`.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-26T07:55:18.129Z  
+**Submitted:** 2026-11-26T07:55:38.801Z  
 
 ```java
 class Solution {
@@ -87,7 +87,7 @@ class Solution {
             int v=serverConnections.get(i)[1];
         }
 
-        return 2;
+        return -1;
     }
 }
 ```
