@@ -128,7 +128,7 @@ The binary tree is:
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-26T07:03:53.108Z  
+**Submitted:** 2026-11-26T07:04:03.107Z  
 
 ```java
 // // class TreeNode {
@@ -176,29 +176,29 @@ class Solution {
     }
 }
 
-class Solution {
-    private void dfs(TreeNode root, List<Integer> pre, List<Integer> in, List<Integer> post){
-        if(root==null) return;
+// class Solution {
+//     private void dfs(TreeNode root, List<Integer> pre, List<Integer> in, List<Integer> post){
+//         if(root==null) return;
 
-        pre.add(root.val);
-        dfs(root.left,pre,in,post);
+//         pre.add(root.val);
+//         dfs(root.left,pre,in,post);
 
-        in.add(root.val);
-        dfs(root.right,pre,in,post);
+//         in.add(root.val);
+//         dfs(root.right,pre,in,post);
 
-        post.add(root.val);
-    }
+//         post.add(root.val);
+//     }
 
-    public List<List<Integer>> getTraversals(TreeNode root) {
-        List<Integer> pre=new ArrayList<>();
-        List<Integer> in=new ArrayList<>();
-        List<Integer> post=new ArrayList<>();
+//     public List<List<Integer>> getTraversals(TreeNode root) {
+//         List<Integer> pre=new ArrayList<>();
+//         List<Integer> in=new ArrayList<>();
+//         List<Integer> post=new ArrayList<>();
 
-        dfs(root,pre,in,post);
+//         dfs(root,pre,in,post);
 
-        return Arrays.asList(in,pre,post);
-    }
-}
+//         return Arrays.asList(in,pre,post);
+//     }
+// }
 
 ```
 
