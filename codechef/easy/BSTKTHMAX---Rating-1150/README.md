@@ -46,7 +46,7 @@ Output
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-23T04:05:39.214Z  
+**Submitted:** 2026-11-26T06:39:31.980Z  
 
 ```java
 // import java.util.*;
@@ -63,18 +63,16 @@ Output
 
 class Solution {
     private void flatten(Node root,ArrayList<Integer> arr){
-        
-        if(root!=null) flatten(root.left,arr);
-        if(root!=null) arr.add(root.val);
-        if(root!=null) flatten(root.right,arr);
+       if(root==null) return;
+       flatten(root.left,arr);
+       arr.add(root.val);
+       flatten(root.right,arr);
     }
     public int kthLargestNode(Node root, int k) {
-        ArrayList<Integer> arr=new java.util.ArrayList<>();
+        ArrayList<Integer> arr=new ArrayList<>();
         flatten(root,arr);
-        int d=arr.size()-k;
-        
-        return arr.get(d);
-        
+        int m=arr.size()-k;
+        return arr.get(m);
     }
 }
 
