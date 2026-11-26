@@ -43,26 +43,26 @@ class Solution {
     }
 }
 
-class Solution {
-    private void dfs(TreeNode root, List<Integer> pre, List<Integer> in, List<Integer> post){
-        if(root==null) return;
+// class Solution {
+//     private void dfs(TreeNode root, List<Integer> pre, List<Integer> in, List<Integer> post){
+//         if(root==null) return;
 
-        pre.add(root.val);
-        dfs(root.left,pre,in,post);
+//         pre.add(root.val);
+//         dfs(root.left,pre,in,post);
 
-        in.add(root.val);
-        dfs(root.right,pre,in,post);
+//         in.add(root.val);
+//         dfs(root.right,pre,in,post);
 
-        post.add(root.val);
-    }
+//         post.add(root.val);
+//     }
 
-    public List<List<Integer>> getTraversals(TreeNode root) {
-        List<Integer> pre=new ArrayList<>();
-        List<Integer> in=new ArrayList<>();
-        List<Integer> post=new ArrayList<>();
+//     public List<List<Integer>> getTraversals(TreeNode root) {
+//         List<Integer> pre=new ArrayList<>();
+//         List<Integer> in=new ArrayList<>();
+//         List<Integer> post=new ArrayList<>();
 
-        dfs(root,pre,in,post);
+//         dfs(root,pre,in,post);
 
-        return Arrays.asList(in,pre,post);
-    }
-}
+//         return Arrays.asList(in,pre,post);
+//     }
+// }
