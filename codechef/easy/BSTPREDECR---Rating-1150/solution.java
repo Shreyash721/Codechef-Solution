@@ -21,6 +21,7 @@ class Solution {
         ArrayList<Integer> arr=new ArrayList<>();
         flatten(root,arr);
         int a=arr.indexOf(x);
-        return arr.get(a-1);
+        if(a>0) return arr.get(a-1);
+        else return -1;
     }
 }
