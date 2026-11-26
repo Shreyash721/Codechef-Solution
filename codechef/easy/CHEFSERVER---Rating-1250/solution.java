@@ -7,6 +7,6 @@ class Solution {
             int v=serverConnections.get(i)[1];
         }
 
-        return 2;
+        return -1;
     }
 }
