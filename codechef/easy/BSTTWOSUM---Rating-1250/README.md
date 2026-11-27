@@ -89,7 +89,7 @@ YES
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-27T09:38:09.581Z  
+**Submitted:** 2026-11-27T09:39:23.001Z  
 
 ```java
 // import java.util.*;
@@ -115,22 +115,22 @@ class Solution {
     }
 
     public void twoSumBST(Node root, int S) {
-        // ArrayList<Integer> arr=new ArrayList<>();
-        // flatten(root,arr);
-        // String flag="NO";
-        // int i=0;
-        // int j=arr.size()-1;
-        // while(i<j){
-        //     int sum=arr.get(i)+arr.get(j);
-        //     if(sum==S){
-        //         flag="YES";
-        //         break;
-        //     }
-        //     else if(sum<S) i=i+1;
-        //     else j=j-1;
-        // }
+        ArrayList<Integer> arr=new ArrayList<>();
+        flatten(root,arr);
+        String flag="NO";
+        int i=0;
+        int j=arr.size()-1;
+        while(i<j){
+            int sum=arr.get(i)+arr.get(j);
+            if(sum==S){
+                flag="YES";
+                break;
+            }
+            else if(sum<S) i=i+1;
+            else j=j-1;
+        }
         
-        System.out.println("YES");
+        System.out.println(flag);
         
     }
 }
